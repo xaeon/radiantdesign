@@ -21,8 +21,10 @@ function showPortfolioPage(name) {
     $('.portfolio_item').removeClass('active');
     $('.portfolio_item[data-name=' + name + ']').addClass('active');
 
+    var url = window.location.pathname + "/" + name + "/portfolio_page.html"
+
     $.ajax({
-        url: "/" + name + "/portfolio_page.html",
+        url: url,
         type: "GET",
         dataType : "html",
     })
