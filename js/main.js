@@ -7,7 +7,7 @@ var portfolios = [
 
 function addPortfolioItem(name, title) {
     var id = 'portfolio_item_' + name;
-    var iconStyle = "background-image: url('/" + name + "/app_icon.png');"
+    var iconStyle = "background-image: url('" + name + "/app_icon.png');"
     var onClick = "showPortfolioPage('" + name + "');";
 
     var html = '<div data-name="' + name + '" class="portfolio_item" onClick="' + onClick + '">' +
