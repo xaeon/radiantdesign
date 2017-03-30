@@ -1,0 +1,439 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.nav_bar {
+    position: fixed;
+    line-height: 56px;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 2;
+}
+
+.nav_bar_logo {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.nav_bar_logo i {
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nav_bar_menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_bar_menu > li {
+    float: left;
+    padding: 0 8px;
+}
+
+.nav_bar_menu > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_bar_menu > li:hover > a {
+    color: orange;
+}
+
+.nav_bar_inner::after {
+    content: "";
+    clear: both;
+}
+
+
+.home_section {
+    position: relative;
+    height: 100vh;
+    background: url('../img/bg_home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home_section_overlay {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.home_section_overlay::before {
+    display: inline-block;
+    content: "";
+    height:100%; 
+    vertical-align: middle;
+}
+
+.home_section_inner {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.home_section_inner h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 92px;
+    margin: 0.2em 0;
+    color: darkorange;
+}
+
+.home_section_inner h1 i {
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+}
+
+.home_section_inner p {
+    margin: 1em;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.home_section .button {
+    background-color: darkorange;
+    font-size: 18px;
+    margin: 1.8em;
+}
+
+.section {
+    padding-top: 80px; 
+}
+
+.section_header h1 {
+    font-weight: 100;
+    font-size: 2.5em;
+    margin: 0 0 1em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section p {
+    font-size: 1.1em;
+}
+
+/*
+.feature {
+    margin: 32px 0;
+}
+
+.feature::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.feature_icon {
+    float: left;
+    font-family: 'ElegantIcons';
+    font-size: 50px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.feature_content {
+    padding-left: 152px;
+    padding-top: 8px;
+}
+
+.feature_content h2 {
+    margin-top: 0px;
+    margin-bottom: 0.4em;
+}
+*/
+.portfolio_items_row {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.portfolio_item {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1em;
+    width: 9em;
+    padding: 1.5em 0;
+    margin: 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.portfolio_item > .portfolio_item_icon {
+    margin: 0 auto 1em auto;
+    width: 5em;
+    height: 5em;
+    background-size: contain;
+}
+
+.portfolio_item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.portfolio_item.active {
+    background: darkorange;
+    color: white;
+}
+
+.portfolio_page {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.portfolio_page h3 {
+    font-weight: 100;
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.portfolio_page p {
+    font-size: 1em;
+}
+
+.portfolio_page::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.portfolio_screens {
+    float: right;
+    width: 40%;
+    margin: 0 0 0 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.screens_arrow {
+    cursor: pointer;
+    font-family: 'ElegantIcons';
+    padding: 0.5em;
+    font-size: 1.4em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+}
+
+.screens_arrow::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.screens_arrow_left {
+    left: 0;
+}
+
+.screens_arrow_right {
+    right: 0;
+}
+
+.screens_arrow:hover {
+    color: darkorange;
+}
+
+.device_frame {
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.device_frame:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.device_screen {
+    background: black;
+    position: absolute;
+    overflow: hidden;
+}
+
+.device_screen img {
+    width: 100%;
+}
+
+.frame_iphone_plus {
+    background-image: url('../img/device_iphone7plus.png');
+}
+
+.frame_iphone_plus:before {
+    content: "";
+    float: left;
+    padding-bottom: 192%;
+}
+
+.frame_iphone_plus .device_screen {
+    left: 9.5%;
+    top: 12.0%;
+    right: 9.5%;
+    bottom: 13.0%;
+}
+
+.frame_nexus_4 {
+    background-image: url('../img/device_nexus4.png');
+}
+
+.frame_nexus_4:before {
+    content: "";
+    float: left;
+    padding-bottom: 184%;
+}
+
+.frame_nexus_4 .device_screen {
+    left: 9%;
+    top: 12.7%;
+    right: 9%;
+    bottom: 13%;
+}
+
+.frame_nexus_7 {
+    background-image: url('../img/device_nexus7.png');
+}
+
+.frame_nexus_7:before {
+    content: "";
+    float: left;
+    padding-bottom: 176%;
+}
+
+.frame_nexus_7 .device_screen {
+    left: 8%;
+    top: 12%;
+    right: 8%;
+    bottom: 12%;
+}
+
+#page_footer {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+#letter {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 80px;
+    padding-top: 50px;
+    background: #ff6d92;
+    background: #ff6d92 radial-gradient(circle at center,#f5b200 0,#fc636b 30%,#ff6d92 70%);
+    background-size: 300% 300%;
+    background-position: -100% -90%;
+}
+
+#letter a {
+    color: darkviolet;
+    text-decoration: none;
+}
+
+.letter_form {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contact_item {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    margin: 0.2em;
+    vertical-align: middle;
+}
+
+.contact_mail::before {
+    font-weight: normal;
+    display: inline-block;
+    margin: 8px;
+    font-size: 1.5em;
+    position: relative;
+    top: -0.15em;
+    vertical-align: middle;
+    content: "\e076";
+    font-family: 'ElegantIcons';
+}
+
+.contact_skype::before {
+    font-weight: normal;
+    display: inline-block;
+    margin: 8px;
+    font-size: 1.5em;
+    vertical-align: middle;
+    content: "\e0a2";
+    font-family: 'ElegantIcons';
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 4px;
+    font-size: 1.1em;
+    padding: 0.5em;
+    margin: 1.5em 0;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid darkviolet;
+    box-shadow: 0 0 20px rgba(147, 29, 208,0.75);
+}
+
+.button {
+    display: inline-block;
+    background-color: darkviolet;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 0.8em 2em;
+    text-align: center;
+    min-width: 200px;
+    text-decoration: none;
+    font-size: 1.3em;
+    box-shadow: 0 0.4em 0.8em rgba(0,0,0,0.25);
+    transition: box-shadow 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0 0.6em 1.5em rgba(0,0,0,0.25);
+}
