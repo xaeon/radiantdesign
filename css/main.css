@@ -367,6 +367,10 @@ p {
     text-decoration: none;
 }
 
+#letter .section_header {
+    padding-bottom: 50px;
+}
+
 .letter_form {
     max-width: 600px;
     margin: 50px auto;
